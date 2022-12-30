@@ -14,8 +14,13 @@ function App() {
     return (
         <div className="App">
             <h1>TypeScript App</h1>
-
             <button onClick={getData}>Get Data</button>
+            {data.map((item) => (
+                <div key={item.id}>
+                    <h3>{item.title}</h3>
+                    <p>{item.completed ? "Completed" : "Not Completed"}</p>
+                </div>
+            ))}
         </div>
     )
 }
