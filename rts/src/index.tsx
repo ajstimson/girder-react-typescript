@@ -1,6 +1,6 @@
-// 1) Import ReactDOM library
 import ReactDOM from "react-dom/client"
-//Import style.css
+import GuestList from "./state/GuestList"
+import Parent from "./props/Parent"
 import "./style.css"
 
 // 2) Get a reference to the div with ID root
@@ -13,7 +13,8 @@ const root = ReactDOM.createRoot(el!)
 const App = () => {
     return (
         <div>
-            <h1>Hi there!</h1>
+            <GuestList />
+            <Parent />
         </div>
     )
 }
