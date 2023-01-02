@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client"
 import GuestList from "./state/GuestList"
+import UserSearch from "./state/UserSearch"
 import Parent from "./props/Parent"
 import "./style.css"
 
@@ -13,6 +14,7 @@ const root = ReactDOM.createRoot(el!)
 const App = () => {
     return (
         <div>
+            <UserSearch />
             <GuestList />
             <Parent />
         </div>
